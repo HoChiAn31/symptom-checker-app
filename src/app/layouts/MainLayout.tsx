@@ -2,6 +2,7 @@
 
 import { FC, ReactNode } from 'react';
 import Header from './Header';
+import Footer from './Footer';
 
 const MainLayout: FC<{ children: ReactNode }> = ({ children }) => {
 	return (
@@ -22,6 +23,7 @@ const MainLayout: FC<{ children: ReactNode }> = ({ children }) => {
 				<div className='bg-background relative z-10'>
 					<Header />
 					<div className='pt-[72px]'>{children}</div>
+					<Footer />
 				</div>
 			</div>
 		</div>

@@ -1,15 +1,24 @@
 @import 'tailwindcss';
+/* @import 'tailwindcss-animated'; */
 
 :root {
 	--background: #001439;
 	--foreground: #171717;
 	--primary: #10a0bd;
+	--gray: #8e92a4;
+	--border-EBEBEB: #ebebeb;
+	--gray1: #bdbccb;
 }
-
+html {
+	scroll-behavior: smooth;
+}
 @theme inline {
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);
 	--color-primary: var(--primary);
+	--color-gray: var(--gray);
+	--color-gray1: var(--gray1);
+
 	--font-sans: var(--font-geist-sans);
 	--font-mono: var(--font-geist-mono);
 }

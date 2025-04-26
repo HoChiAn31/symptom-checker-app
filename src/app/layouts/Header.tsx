@@ -7,8 +7,8 @@ import { usePathname } from 'next/navigation';
 const Header: React.FC = () => {
 	const pathname = usePathname();
 	return (
-		<div className='fixed top-0 right-0 left-0 z-[99999] bg-transparent'>
-			<header className='container mx-auto flex items-center justify-between px-6 py-4 text-white'>
+		<div className='bg-background fixed top-0 right-0 left-0 z-[99999]'>
+			<header className='container mx-auto flex items-center justify-between border-b border-[#FFFFFF24] px-6 py-4 text-white'>
 				{/* Logo Section */}
 				<div className='flex items-center'>
 					<svg
@@ -29,21 +29,27 @@ const Header: React.FC = () => {
 				<nav className='flex items-center space-x-6'>
 					<Link
 						href='/'
-						className={`hover:text-cyan-400 ${pathname === '/' ? 'text-primary' : ''}`}
+						className={`text-xs font-bold hover:text-cyan-400 ${pathname === '/' ? 'text-primary' : ''}`}
 					>
 						HOME
 					</Link>
-					<Link href='/about' className='hover:text-cyan-400'>
+					<Link
+						href='/about'
+						className={`text-xs font-bold hover:text-cyan-400 ${pathname === '/about' ? 'text-primary' : ''}`}
+					>
 						ABOUT US
 					</Link>
-					<Link href='/services' className='hover:text-cyan-400'>
+					<Link
+						href='/service'
+						className={`text-xs font-bold hover:text-cyan-400 ${pathname === '/service' ? 'text-primary' : ''}`}
+					>
 						SERVICES
 					</Link>
-					<Link href='/doctor' className='hover:text-cyan-400'>
+					<Link href='/doctor' className='text-xs font-bold hover:text-cyan-400'>
 						DOCTOR
 					</Link>
 					<div className='group relative'>
-						<Link href='/pages' className='flex items-center hover:text-cyan-400'>
+						<Link href='/pages' className='flex items-center text-xs font-bold hover:text-cyan-400'>
 							PAGES
 							<svg
 								className='ml-1 h-4 w-4'
@@ -62,7 +68,7 @@ const Header: React.FC = () => {
 						</Link>
 					</div>
 					<div className='group relative'>
-						<Link href='/blog' className='flex items-center hover:text-cyan-400'>
+						<Link href='/blog' className='flex items-center text-xs font-bold hover:text-cyan-400'>
 							BLOG
 							<svg
 								className='ml-1 h-4 w-4'
@@ -80,7 +86,7 @@ const Header: React.FC = () => {
 							</svg>
 						</Link>
 					</div>
-					<Link href='/contact' className='hover:text-cyan-400'>
+					<Link href='/contact' className='text-xs font-bold hover:text-cyan-400'>
 						CONTACT
 					</Link>
 				</nav>
