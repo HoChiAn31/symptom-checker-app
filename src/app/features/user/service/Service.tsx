@@ -1,6 +1,10 @@
 'use client';
 import Breadcrumb from '@/app/components/Breadcrumb';
 import FadeInOnScroll from '@/app/components/FadeInOnScroll';
+import OurSpecialist from './OurSpecialist';
+import Form from './Form';
+import FAQ from './FAQ';
+import FormCheck from './FormCheck';
 
 function Service() {
 	const breadcrumbs = [
@@ -21,8 +25,23 @@ function Service() {
 					</div>
 				</FadeInOnScroll>
 			</div>
-			<div className='bg-white pb-20'>
-				<div className='container mx-auto space-y-10'></div>
+			<div className='bg-white py-16'>
+				<div className='container mx-auto space-y-10'>
+					<OurSpecialist />
+				</div>
+			</div>
+			<div className='container mx-auto space-y-10'>
+				<Form />
+			</div>
+			<div className='bg-white py-16'>
+				<div className='container mx-auto space-y-10'>
+					<FAQ />
+				</div>
+			</div>
+			<div className='bg-white py-16'>
+				<div className='container mx-auto space-y-10'>
+					<FormCheck />
+				</div>
 			</div>
 		</div>
 	);

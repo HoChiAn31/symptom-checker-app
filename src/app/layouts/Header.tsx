@@ -21,7 +21,7 @@ const Header: React.FC = () => {
 						<path d='M12 6V18M6 12H18' stroke='#00BCD4' strokeWidth='2' strokeLinecap='round' />
 					</svg>
 					<Typography variant='h6' className='font-bold'>
-						HolaDoc
+						HealDoc
 					</Typography>
 				</div>
 
@@ -31,26 +31,26 @@ const Header: React.FC = () => {
 						href='/'
 						className={`text-xs font-bold hover:text-cyan-400 ${pathname === '/' ? 'text-primary' : ''}`}
 					>
-						HOME
+						TRANG CHỦ
 					</Link>
 					<Link
 						href='/about'
 						className={`text-xs font-bold hover:text-cyan-400 ${pathname === '/about' ? 'text-primary' : ''}`}
 					>
-						ABOUT US
+						GIỚI THIỆU
 					</Link>
 					<Link
 						href='/service'
 						className={`text-xs font-bold hover:text-cyan-400 ${pathname === '/service' ? 'text-primary' : ''}`}
 					>
-						SERVICES
+						DỊCH VỤ
 					</Link>
 					<Link href='/doctor' className='text-xs font-bold hover:text-cyan-400'>
-						DOCTOR
+						BÁC SĨ
 					</Link>
 					<div className='group relative'>
 						<Link href='/pages' className='flex items-center text-xs font-bold hover:text-cyan-400'>
-							PAGES
+							TRANG PHỤ
 							<svg
 								className='ml-1 h-4 w-4'
 								fill='none'
@@ -69,7 +69,7 @@ const Header: React.FC = () => {
 					</div>
 					<div className='group relative'>
 						<Link href='/blog' className='flex items-center text-xs font-bold hover:text-cyan-400'>
-							BLOG
+							TIN TỨC
 							<svg
 								className='ml-1 h-4 w-4'
 								fill='none'
@@ -87,7 +87,7 @@ const Header: React.FC = () => {
 						</Link>
 					</div>
 					<Link href='/contact' className='text-xs font-bold hover:text-cyan-400'>
-						CONTACT
+						LIÊN HỆ
 					</Link>
 				</nav>
 

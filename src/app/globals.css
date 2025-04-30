@@ -6,7 +6,7 @@
 	--foreground: #171717;
 	--primary: #10a0bd;
 	--gray: #8e92a4;
-	--border-EBEBEB: #ebebeb;
+	--light-grey: #192a4c;
 	--gray1: #bdbccb;
 }
 html {
@@ -18,7 +18,8 @@ html {
 	--color-primary: var(--primary);
 	--color-gray: var(--gray);
 	--color-gray1: var(--gray1);
-
+	--color-gray1: var(--gray1);
+	--color-light-grey: var(--light-grey);
 	--font-sans: var(--font-geist-sans);
 	--font-mono: var(--font-geist-mono);
 }

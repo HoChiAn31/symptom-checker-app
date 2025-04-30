@@ -12,14 +12,13 @@ const Footer: React.FC = () => {
 		<div className='bg-background container mx-auto'>
 			<Box
 				sx={{
-					// backgroundColor: '#001439',
 					color: 'white',
 					padding: '40px 20px',
 					fontFamily: 'Arial, sans-serif',
 				}}
 			>
 				<Grid container spacing={6}>
-					{/* Newsletter Subscription */}
+					{/* Đăng ký nhận bản tin */}
 					<Grid size={{ xs: 12 }}>
 						<Box
 							sx={{
@@ -32,16 +31,15 @@ const Footer: React.FC = () => {
 						>
 							<Box sx={{ width: '50%' }}>
 								<Typography variant='h6' sx={{ fontWeight: 'bold' }}>
-									Subscribe Our Newsletter
+									Đăng ký nhận bản tin
 								</Typography>
 								<Typography variant='body2' sx={{ marginTop: '10px', opacity: 0.7 }}>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-									incididunt ut labore et dolore
+									Hãy nhập email để nhận được những thông tin và ưu đãi mới nhất từ chúng tôi.
 								</Typography>
 							</Box>
 							<Box sx={{ display: 'flex', alignItems: 'center' }}>
 								<TextField
-									placeholder='Enter Your Email Address'
+									placeholder='Nhập địa chỉ email của bạn'
 									variant='outlined'
 									size='medium'
 									sx={{
@@ -49,7 +47,7 @@ const Footer: React.FC = () => {
 										borderRadius: '4px 0 0 4px',
 										'& .MuiOutlinedInput-root': {
 											borderRadius: '4px 0 0 4px',
-											height: '56px', // đảm bảo cùng chiều cao với Button
+											height: '56px',
 										},
 										width: '360px',
 									}}
@@ -60,17 +58,17 @@ const Footer: React.FC = () => {
 										backgroundColor: '#10a0bd',
 										borderRadius: '0 4px 4px 0',
 										textTransform: 'none',
-										height: '56px', // giống chiều cao TextField
-										px: 3, // padding ngang
+										height: '56px',
+										px: 3,
 									}}
 								>
-									Subscribe
+									Đăng ký
 								</Button>
 							</Box>
 						</Box>
 					</Grid>
 
-					{/* Footer Content */}
+					{/* Giới thiệu */}
 					<Grid size={{ xs: 12, md: 3 }}>
 						<Box sx={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
 							<Box
@@ -83,12 +81,12 @@ const Footer: React.FC = () => {
 								}}
 							/>
 							<Typography variant='h6' sx={{ fontWeight: 'bold' }}>
-								Holadoc
+								HealDoc
 							</Typography>
 						</Box>
 						<Typography variant='body2' sx={{ opacity: 0.7, marginBottom: '20px' }}>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-							incididunt ut labore et dolore
+							Nền tảng tư vấn sức khỏe trực tuyến giúp bạn kết nối nhanh chóng với bác sĩ mọi lúc
+							mọi nơi.
 						</Typography>
 						<Box sx={{ display: 'flex', gap: '10px' }}>
 							<IconButton sx={{ backgroundColor: '#10a0bd', color: 'white' }}>
@@ -106,39 +104,7 @@ const Footer: React.FC = () => {
 						</Box>
 					</Grid>
 
-					{/* Quick Links */}
-					<Grid size={{ xs: 12, md: 3 }}>
-						<Typography
-							variant='h6'
-							sx={{
-								fontWeight: 'bold',
-								marginBottom: '20px',
-								borderBottom: '2px solid #10a0bd',
-								paddingBottom: '5px',
-								display: 'inline-block', // fix chiều dài
-								// width: 'fit-content',// fix chiều dài
-							}}
-						>
-							Quick Links
-						</Typography>
-						<Typography variant='body2' sx={{ marginBottom: '10px', opacity: 0.7 }}>
-							About Us
-						</Typography>
-						<Typography variant='body2' sx={{ marginBottom: '10px', opacity: 0.7 }}>
-							Services
-						</Typography>
-						<Typography variant='body2' sx={{ marginBottom: '10px', opacity: 0.7 }}>
-							Doctor
-						</Typography>
-						<Typography variant='body2' sx={{ marginBottom: '10px', opacity: 0.7 }}>
-							Pricing
-						</Typography>
-						<Typography variant='body2' sx={{ marginBottom: '10px', opacity: 0.7 }}>
-							Contact
-						</Typography>
-					</Grid>
-
-					{/* Useful Links */}
+					{/* Liên kết nhanh */}
 					<Grid size={{ xs: 12, md: 3 }}>
 						<Typography
 							variant='h6'
@@ -150,26 +116,26 @@ const Footer: React.FC = () => {
 								display: 'inline-block',
 							}}
 						>
-							Useful Links
+							Liên kết nhanh
 						</Typography>
 						<Typography variant='body2' sx={{ marginBottom: '10px', opacity: 0.7 }}>
-							Privacy Policy
+							Về chúng tôi
 						</Typography>
 						<Typography variant='body2' sx={{ marginBottom: '10px', opacity: 0.7 }}>
-							Terms and Conditions
+							Dịch vụ
 						</Typography>
 						<Typography variant='body2' sx={{ marginBottom: '10px', opacity: 0.7 }}>
-							Disclaimer
+							Bác sĩ
 						</Typography>
 						<Typography variant='body2' sx={{ marginBottom: '10px', opacity: 0.7 }}>
-							Support
+							Bảng giá
 						</Typography>
 						<Typography variant='body2' sx={{ marginBottom: '10px', opacity: 0.7 }}>
-							FAQ
+							Liên hệ
 						</Typography>
 					</Grid>
 
-					{/* Make Appointment */}
+					{/* Liên kết hữu ích */}
 					<Grid size={{ xs: 12, md: 3 }}>
 						<Typography
 							variant='h6'
@@ -181,12 +147,43 @@ const Footer: React.FC = () => {
 								display: 'inline-block',
 							}}
 						>
-							Make Appointment
+							Liên kết hữu ích
+						</Typography>
+						<Typography variant='body2' sx={{ marginBottom: '10px', opacity: 0.7 }}>
+							Chính sách bảo mật
+						</Typography>
+						<Typography variant='body2' sx={{ marginBottom: '10px', opacity: 0.7 }}>
+							Điều khoản & Điều kiện
+						</Typography>
+						<Typography variant='body2' sx={{ marginBottom: '10px', opacity: 0.7 }}>
+							Tuyên bố miễn trừ trách nhiệm
+						</Typography>
+						<Typography variant='body2' sx={{ marginBottom: '10px', opacity: 0.7 }}>
+							Hỗ trợ
+						</Typography>
+						<Typography variant='body2' sx={{ marginBottom: '10px', opacity: 0.7 }}>
+							Câu hỏi thường gặp
+						</Typography>
+					</Grid>
+
+					{/* Đặt lịch hẹn */}
+					<Grid size={{ xs: 12, md: 3 }}>
+						<Typography
+							variant='h6'
+							sx={{
+								fontWeight: 'bold',
+								marginBottom: '20px',
+								borderBottom: '2px solid #10a0bd',
+								paddingBottom: '5px',
+								display: 'inline-block',
+							}}
+						>
+							Đặt lịch hẹn
 						</Typography>
 						<Box sx={{ display: 'flex', alignItems: 'center', marginBottom: '20px', gap: 1 }}>
 							<Clock3 color='#10a0bd' />
 							<Typography variant='body2' sx={{ opacity: 0.7 }}>
-								9 A.M - 10 P.M, Monday - Saturday
+								9 giờ sáng - 10 giờ tối, Thứ Hai - Thứ Bảy
 							</Typography>
 						</Box>
 						<Button
@@ -194,12 +191,12 @@ const Footer: React.FC = () => {
 							startIcon={<PhoneIcon />}
 							sx={{ backgroundColor: '#192A4C', textTransform: 'none', padding: '10px 20px' }}
 						>
-							Call Us Today +62 81 414 257
+							Gọi ngay +62 81 414 257
 						</Button>
 					</Grid>
 				</Grid>
 
-				{/* Footer Bottom */}
+				{/* Cuối footer */}
 				<Box
 					sx={{
 						borderTop: '1px solid #FFFFFF29',
@@ -210,10 +207,10 @@ const Footer: React.FC = () => {
 					}}
 				>
 					<Typography variant='body2' sx={{ opacity: 0.7 }}>
-						Online Doctor Consultation Template Kit by Jegtheme
+						Giao diện tư vấn sức khỏe trực tuyến
 					</Typography>
 					<Typography variant='body2' sx={{ opacity: 0.7 }}>
-						Copyright © 2021. All rights reserved.
+						Bản quyền © 2025. Mọi quyền được bảo lưu.
 					</Typography>
 				</Box>
 			</Box>
