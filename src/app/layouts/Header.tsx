@@ -48,7 +48,7 @@ const Header: React.FC = () => {
 					<Link href='/doctor' className='text-xs font-bold hover:text-cyan-400'>
 						BÁC SĨ
 					</Link>
-					<div className='group relative'>
+					{/* <div className='group relative'>
 						<Link href='/pages' className='flex items-center text-xs font-bold hover:text-cyan-400'>
 							TRANG PHỤ
 							<svg
@@ -66,11 +66,11 @@ const Header: React.FC = () => {
 								/>
 							</svg>
 						</Link>
-					</div>
+					</div> */}
 					<div className='group relative'>
 						<Link href='/blog' className='flex items-center text-xs font-bold hover:text-cyan-400'>
 							TIN TỨC
-							<svg
+							{/* <svg
 								className='ml-1 h-4 w-4'
 								fill='none'
 								stroke='currentColor'
@@ -83,7 +83,7 @@ const Header: React.FC = () => {
 									strokeWidth='2'
 									d='M19 9l-7 7-7-7'
 								/>
-							</svg>
+							</svg> */}
 						</Link>
 					</div>
 					<Link href='/contact' className='text-xs font-bold hover:text-cyan-400'>

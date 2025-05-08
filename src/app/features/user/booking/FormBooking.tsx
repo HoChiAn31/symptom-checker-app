@@ -12,16 +12,24 @@ interface BookingProps {
 	hospitalName: string;
 }
 
+// {
+//   "user_id": "95a87a4f-c79a-48d8-afb8-7442b9168140",
+//   "clinic_id": "a196c083-0878-4dd2-ad04-cc3559a5b7a8",
+//   "appointment_time": "2025-05-05T09:25:00.017Z",
+//   "symptom": "Đau dạ dày",
+//   "note": "Vui lòng xác nhận trước 1 ngày.",
+//   "status": "pending"
+// }
 export default function FormBooking({ hospitalName }: BookingProps) {
 	const router = useRouter();
 	const [formData, setFormData] = useState<BookingForm>({
-		phone: '',
-		email: '',
-		name: '',
-		address: '',
-		appointmentDate: null,
-		appointmentTime: null,
-		notes: '',
+		phone: '0123456789',
+		email: 'hochian31@gmail.com',
+		name: 'Nguyen Văn Tèo',
+		address: '123 Phường 14, Quận Gò Vấp, Thành Phố Hồ Chí Minh',
+		appointmentDate: new Date('2025-05-10'),
+		appointmentTime: new Date('2025-05-10T14:00'),
+		notes: 'Vui lòng xác nhận trước 1 ngày.',
 	});
 
 	const handleChange = (field: keyof BookingForm, value: any) => {
@@ -59,9 +67,8 @@ export default function FormBooking({ hospitalName }: BookingProps) {
       });
       if (!response.ok) throw new Error('Account creation failed');
       */
-
 			// Redirect to success page
-			router.push('/booking/success');
+			// router.push('/booking/success');
 		} catch (error) {
 			console.error('Error creating account:', error);
 			// Handle error (e.g., show error message)

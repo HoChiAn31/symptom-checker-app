@@ -1,9 +1,9 @@
-import HomePage from '@/app/features/user/Home/Home';
+import ContactPage from '@/app/features/user/contact/contact';
 
-export default function Home() {
+export default function Contact() {
 	return (
 		<>
-			<HomePage />
+			<ContactPage />
 		</>
 	);
 }

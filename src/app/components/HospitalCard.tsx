@@ -31,9 +31,14 @@ const HospitalCard: React.FC<HospitalCardProps> = ({ doctor }) => {
 				/>
 			</Box>
 			<CardContent className='!pb-0 text-center'>
-				<Box className='bg-background rounded-md py-2 text-white'>
+				<Box className='text-background rounded-md py-2'>
 					<Typography variant='h6' className='font-bold'>
-						<a href={doctor.link} target='_blank' className='text-lg' rel='noopener noreferrer'>
+						<a
+							href={doctor.link}
+							target='_blank'
+							className='text-lg font-bold'
+							rel='noopener noreferrer'
+						>
 							{doctor.name}
 						</a>
 					</Typography>
